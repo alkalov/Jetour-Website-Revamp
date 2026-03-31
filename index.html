@@ -1,56 +1,333 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jetour Kuwait | Budastoor Motors</title>
-    <style>
-        /* Basic reset for clean look */
-        body { font-family: sans-serif; margin: 0; padding: 0; line-height: 1.6; }
-        nav { display: flex; justify-content: space-between; padding: 20px; background: #000; color: #fff; }
-        .hero { text-align: center; padding: 50px 20px; background: #f4f4f4; }
-        
-        /* Model Grid */
-        .model-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; padding: 40px; }
-        .card { border: 1px solid #ddd; padding: 20px; text-align: center; }
-        .flagship { border: 2px solid #d4af37; } /* Gold border for G700 */
-        
-        footer { background: #000; color: #fff; text-align: center; padding: 20px; margin-top: 40px; }
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>JETOUR | DRIVE YOUR FUTURE</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-fixed": "#ffe08c",
+              "tertiary-fixed-dim": "#c9c6c1",
+              "outline": "#98907e",
+              "tertiary-container": "#adaba7",
+              "surface-variant": "#353436",
+              "tertiary-fixed": "#e5e2dd",
+              "surface-dim": "#131314",
+              "on-primary-fixed": "#241a00",
+              "on-primary": "#3d2f00",
+              "surface-container-low": "#1c1b1c",
+              "surface-container-lowest": "#0e0e0f",
+              "on-tertiary": "#31302d",
+              "secondary-container": "#4a4642",
+              "secondary-fixed-dim": "#cbc5c0",
+              "on-background": "#e5e2e3",
+              "surface-container-highest": "#353436",
+              "inverse-surface": "#e5e2e3",
+              "inverse-on-surface": "#313031",
+              "on-error": "#690005",
+              "error-container": "#93000a",
+              "surface-bright": "#3a393a",
+              "primary": "#e5c363",
+              "on-primary-container": "#4f3d00",
+              "on-surface": "#e5e2e3",
+              "inverse-primary": "#745b00",
+              "outline-variant": "#4d4637",
+              "secondary-fixed": "#e8e1dc",
+              "on-error-container": "#ffdad6",
+              "on-secondary": "#33302c",
+              "tertiary": "#c9c6c2",
+              "on-tertiary-container": "#40403c",
+              "on-surface-variant": "#d0c5b2",
+              "error": "#ffb4ab",
+              "primary-fixed-dim": "#e5c363",
+              "surface-tint": "#e5c363",
+              "on-tertiary-fixed-variant": "#474743",
+              "on-secondary-fixed": "#1e1b18",
+              "surface-container-high": "#2a2a2b",
+              "secondary": "#cbc5c0",
+              "primary-container": "#c8a84b",
+              "on-tertiary-fixed": "#1c1c19",
+              "on-secondary-fixed-variant": "#4a4642",
+              "background": "#131314",
+              "on-primary-fixed-variant": "#584400",
+              "surface-container": "#201f20",
+              "on-secondary-container": "#bab4af",
+              "surface": "#131314"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        background-color: #131314;
+        color: #e5e2e3;
+        font-family: 'Inter', sans-serif;
+      }
+      .kinetic-monolith-text {
+        text-shadow: 0 0 30px rgba(229, 195, 99, 0.2);
+      }
     </style>
 </head>
-<body>
-
-    <nav>
-        <div>JETOUR KUWAIT</div>
-        <div><a href="#models" style="color:white; text-decoration:none;">Models</a> | <a href="tel:+96599699622" style="color:white; text-decoration:none;">Contact</a></div>
-    </nav>
-
-    <header class="hero">
-        <h1>Drive Your Future</h1>
-        <p>Official Authorized Dealer - Budastoor Motors, Al Rai</p>
-    </header>
-
-    <section id="models" class="model-grid">
-        <div class="card flagship">
-            <h3>G700 (2026)</h3>
-            <p>904 HP · Plug-In Hybrid · 7-Seater</p>
-            <strong>Flagship</strong>
-        </div>
-        <div class="card">
-            <h3>T2</h3>
-            <p>Style Meets Smart Tech</p>
-            <strong>From KD 19,500</strong>
-        </div>
-        <div class="card">
-            <h3>Dashing</h3>
-            <p>Urban Crossover · City Ready</p>
-            <strong>Explore Now</strong>
-        </div>
-    </section>
-
-    <footer>
-        <p>Street Mohammad Bin Al Qasim, Al Rai, Kuwait | +965 9969 9622</p>
-    </footer>
-
-</body>
-</html>
+<body class="bg-background text-on-background selection:bg-primary selection:text-on-primary">
+<!-- Top Navigation Shell -->
+<nav class="fixed top-0 w-full z-[100] bg-[#131314]/90 backdrop-blur-xl shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
+<div class="flex justify-between items-center px-12 py-6 w-full mx-auto">
+<a class="text-3xl font-black tracking-tighter text-[#e5c363] font-headline uppercase" href="index.html">JETOUR</a>
+<div class="hidden md:flex gap-10 items-center">
+<a class="font-headline uppercase tracking-[0.15em] font-bold text-[#e5e2e3] hover:text-[#e5c363] transition-colors duration-300" href="models.html">MODELS</a>
+<a class="font-headline uppercase tracking-[0.15em] font-bold text-[#e5e2e3] hover:text-[#e5c363] transition-colors duration-300" href="g70.html">TECHNOLOGY</a>
+<a class="font-headline uppercase tracking-[0.15em] font-bold text-[#e5e2e3] hover:text-[#e5c363] transition-colors duration-300" href="service.html">OWNERSHIP</a>
+<a class="font-headline uppercase tracking-[0.15em] font-bold text-[#e5e2e3] hover:text-[#e5c363] transition-colors duration-300" href="contact.html">EXPERIENCE</a>
+<a class="font-headline uppercase tracking-[0.15em] font-bold text-[#e5e2e3] hover:text-[#e5c363] transition-colors duration-300" href="#">SHOP</a>
+</div>
+<div class="flex items-center gap-6">
+<div class="hidden lg:flex gap-4 text-[#e5e2e3]">
+<span class="material-symbols-outlined cursor-pointer hover:text-primary">language</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-primary">location_on</span>
+</div>
+<a class="bg-primary text-on-primary font-headline font-bold uppercase tracking-widest px-6 py-3 rounded-lg hover:scale-105 active:scale-95 transition-all inline-block text-center" href="contact.html">BOOK A TEST DRIVE</a>
+</div>
+</div>
+<div class="bg-[#353436] h-[1px] w-full opacity-20"></div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative h-screen w-full flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover brightness-[0.4]" data-alt="luxury jetour suv parked on a dark neon-lit futuristic city street at night with dramatic golden reflections and high-end cinematic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtUclV0u4pjNKkWXeoaWzKDw3TZjhQ2IiZxiF34O2xDcjIZNGMbqgHEh7XbL3XXAyrYWKJxVwVdCrZXSoxuAOAB6Vyk96iylYX2PV6cek2sKo5vb9USjwpUVmvS44kvxoFv9MdK2CTCHtNe1GBFQxI_Cp1PV0jIO-GHcO3JxHZfUf62ZfR0XTmq7WRuvJ6n2puYEV_r_ymqqpzxrqRmn-LdU8nFI00GjZtUDNfyj4f3kDxPRdxTSWfQEpckT48b5aV1sAmFJIvEHpf"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+</div>
+<div class="relative z-10 px-12 md:px-24 w-full">
+<div class="max-w-4xl space-y-8">
+<h1 class="text-7xl md:text-9xl font-black font-headline tracking-tighter uppercase leading-[0.9] kinetic-monolith-text">
+                        DRIVE YOUR <br/><span class="text-primary">FUTURE</span>
+</h1>
+<p class="text-on-surface-variant font-body text-xl max-w-xl leading-relaxed">
+                        Precision engineering meets obsidian-grade luxury. Experience the kinetic power of the new JETOUR lineup.
+                    </p>
+<div class="flex flex-wrap gap-6 pt-4">
+<a class="bg-primary text-on-primary font-headline font-black uppercase tracking-widest px-10 py-5 rounded-lg text-lg hover:brightness-110 transition-all inline-block text-center" href="models.html">EXPLORE MODELS</a>
+<a class="border border-primary/40 text-primary font-headline font-black uppercase tracking-widest px-10 py-5 rounded-lg text-lg hover:bg-primary/10 transition-all inline-block text-center" href="contact.html">BOOK TEST DRIVE</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Section (The Monolithic Data Bar) -->
+<section class="bg-surface-container-low py-20 px-12 border-y border-surface-container-highest/20">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+<div class="space-y-2">
+<div class="text-5xl font-black font-headline text-primary">09</div>
+<div class="text-on-surface-variant font-label uppercase tracking-[0.2em] text-xs">GLOBAL MODELS</div>
+</div>
+<div class="space-y-2 md:border-x border-surface-container-highest/50">
+<div class="text-5xl font-black font-headline text-primary">904 HP</div>
+<div class="text-on-surface-variant font-label uppercase tracking-[0.2em] text-xs">PEAK PERFORMANCE</div>
+</div>
+<div class="space-y-2">
+<div class="text-5xl font-black font-headline text-primary">10-YEAR</div>
+<div class="text-on-surface-variant font-label uppercase tracking-[0.2em] text-xs">GOLD WARRANTY</div>
+</div>
+</div>
+</section>
+<!-- Featured Performance Cards -->
+<section class="py-24 px-12 bg-background">
+<div class="max-w-7xl mx-auto">
+<div class="flex justify-between items-end mb-16">
+<h2 class="text-5xl font-black font-headline uppercase tracking-tighter">FEATURED <span class="text-primary">ENGINEERING</span></h2>
+<div class="h-1 w-24 bg-primary mb-3"></div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+<!-- T2 Card -->
+<div class="group bg-surface-container-low overflow-hidden rounded-lg transition-all hover:bg-surface-container-high relative">
+<div class="h-[400px] overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-80" data-alt="rugged metallic jetour t2 off-road suv in a moody desert sunset with high contrast shadows and golden hour highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDP_uTULfKNYpA-7jjUthps-UYIK2oQL85IV-nMKzSjl8UdRueK9FsaPr4KuGobz9s3PkSv00qoaszDU-Wx098UlcGzw40i25h3qOlUfD1RtAqzmZD3cEDW8obN1iQ4W4jQUVzZXzVJk-gp_jJNgcmSWlYER98MqWJk_NeuB0G_Z7zNVqSi2u0_kRnlKFdj4qhvP2KN4-o73DQcp2dcUNxvPYpwFxDIVeql46ZVsCtwkuDL2bvhGYKDvYb94NdsDEA-fDmPfnRIQX0i"/>
+</div>
+<div class="p-10 space-y-6">
+<div class="flex justify-between items-center">
+<h3 class="text-4xl font-black font-headline uppercase">JETOUR T2</h3>
+<div class="bg-surface-container-highest px-4 py-2 text-xs font-bold tracking-widest uppercase">OFF-ROAD KING</div>
+</div>
+<div class="grid grid-cols-3 gap-4 py-4 border-y border-surface-container-highest/30">
+<div>
+<p class="text-[10px] text-on-surface-variant uppercase tracking-widest">Engine</p>
+<p class="font-bold text-primary">2.0TD</p>
+</div>
+<div>
+<p class="text-[10px] text-on-surface-variant uppercase tracking-widest">Drive</p>
+<p class="font-bold text-primary">XWD</p>
+</div>
+<div>
+<p class="text-[10px] text-on-surface-variant uppercase tracking-widest">Torque</p>
+<p class="font-bold text-primary">390NM</p>
+</div>
+</div>
+<button class="group/btn flex items-center gap-4 font-headline font-black uppercase tracking-widest text-primary">
+                                EXPLORE SPECS
+                                <span class="material-symbols-outlined group-hover/btn:translate-x-2 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- G70 Card -->
+<div class="group bg-surface-container-low overflow-hidden rounded-lg transition-all hover:bg-surface-container-high relative">
+<div class="h-[400px] overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-80" data-alt="sleek obsidian jetour g70 luxury sedan in a minimalist concrete architectural space with sharp dramatic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADzXN-61uWYU8lzOlm1nOuV20ZsV_6KPUQD65MNhhvpUbGSUE_aHze_X-COMrdBLjjAHVtUrY7t6Nc5yjjQjFp2NNQnei9dqbZzyXIHK2y8ZVYZ_jF0Ybvv8kuglVli3Q4c_9P5nPbcX3eHzxySHRJgHIrZyLwZ_M4_oqSVcQA7On7nK4ABhHqEmePh3JjNIEixNfUouFfK9utCjvHXqU8mcIkV1mRjxARFhGZJms9NELXpsQAYVSOFPsbhrWt0NFw91lh2LxtDmxK"/>
+</div>
+<div class="p-10 space-y-6">
+<div class="flex justify-between items-center">
+<h3 class="text-4xl font-black font-headline uppercase">JETOUR G70</h3>
+<div class="bg-surface-container-highest px-4 py-2 text-xs font-bold tracking-widest uppercase">ELITE SERIES</div>
+</div>
+<div class="grid grid-cols-3 gap-4 py-4 border-y border-surface-container-highest/30">
+<div>
+<p class="text-[10px] text-on-surface-variant uppercase tracking-widest">Efficiency</p>
+<p class="font-bold text-primary">HYBRID</p>
+</div>
+<div>
+<p class="text-[10px] text-on-surface-variant uppercase tracking-widest">Range</p>
+<p class="font-bold text-primary">1000KM</p>
+</div>
+<div>
+<p class="text-[10px] text-on-surface-variant uppercase tracking-widest">0-100</p>
+<p class="font-bold text-primary">4.2S</p>
+</div>
+</div>
+<button class="group/btn flex items-center gap-4 font-headline font-black uppercase tracking-widest text-primary">
+                                EXPLORE SPECS
+                                <span class="material-symbols-outlined group-hover/btn:translate-x-2 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Models Interactive Grid -->
+<section class="py-24 px-12 bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto">
+<div class="mb-16">
+<p class="text-primary font-label uppercase tracking-[0.3em] text-xs mb-4">THE FLEET</p>
+<h2 class="text-6xl font-black font-headline uppercase tracking-tighter">OUR <span class="text-primary">MODELS</span></h2>
+</div>
+<div class="space-y-4">
+<!-- Row 1: DASHING -->
+<div class="group relative flex flex-col md:flex-row items-center justify-between p-12 bg-surface-container transition-all hover:bg-surface-container-highest border-l-4 border-transparent hover:border-primary">
+<div class="relative z-10">
+<h4 class="text-5xl font-black font-headline uppercase group-hover:text-primary transition-colors">DASHING</h4>
+<p class="text-on-surface-variant font-body mt-2">The sport-luxury crossover for the urban explorer.</p>
+</div>
+<div class="hidden md:block absolute right-1/4 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-x-10 group-hover:translate-x-0 w-[400px]">
+<img class="w-full h-auto object-contain" data-alt="dynamic side profile of a modern sports car with metallic gold finish on a dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBad7XLgxO_UY8r569ZAit5DZvJAmu327g98f4jfLz7gVcrVy_sGZ8uWQtGCVBMUK9yJKbyf6HwZKjc8e1AHgaAdzc5gf9SPfmLxL-O8xHT-epSG5H9WKSH8-pzNnUNG0SDkR3KrwgmZL0OJ_EdUUX_lppylmczceopLvhfaGuWv2ep793diEpHs3jKPKHsA1xRCJ5WdBwix9a6t9-zs9vyw4JxX80_XateXo4U00yIo0kVe0ZKdkZxlzACW6C3u8A7-4Mf2mc4NR-1"/>
+</div>
+<div class="mt-8 md:mt-0">
+<button class="bg-surface-container-highest border border-primary/20 text-on-surface px-8 py-4 uppercase font-bold text-xs tracking-widest group-hover:bg-primary group-hover:text-on-primary transition-all">VIEW DETAILS</button>
+</div>
+</div>
+<!-- Row 2: X70 PLUS -->
+<div class="group relative flex flex-col md:flex-row items-center justify-between p-12 bg-surface-container transition-all hover:bg-surface-container-highest border-l-4 border-transparent hover:border-primary">
+<div class="relative z-10">
+<h4 class="text-5xl font-black font-headline uppercase group-hover:text-primary transition-colors">X70 PLUS</h4>
+<p class="text-on-surface-variant font-body mt-2">Unmatched comfort and presence for family journeys.</p>
+</div>
+<div class="hidden md:block absolute right-1/4 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-x-10 group-hover:translate-x-0 w-[400px]">
+<img class="w-full h-auto object-contain" data-alt="luxury family suv front view with distinctive daytime running lights in a dark professional studio setup" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwQa9rZYyT4hRgqZI30fvgKnGYPV8p0NColHfBoXoV-AJxAQOvPQL8bGtxSfPcg2Cij_3vk-yHV5U8g3uCk1LpNHZlQ11rv-iJFJ-xsH7ZlHoy1IVfyGYZXS-e8BnzSXCuQc93_uHf9M_raS4Zz1dKbINHrdGG2tupbCMqvzbHDxvMURiBobYE8IPEEY5IXMApnPQOqxzUC91l4sQCoXrA_0hnJLv2x0xkZYoBEeftYywnXREjtBpxiWwm3x2vR5JfD4FFTJW4C2X9"/>
+</div>
+<div class="mt-8 md:mt-0">
+<button class="bg-surface-container-highest border border-primary/20 text-on-surface px-8 py-4 uppercase font-bold text-xs tracking-widest group-hover:bg-primary group-hover:text-on-primary transition-all">VIEW DETAILS</button>
+</div>
+</div>
+<!-- Row 3: X90 PLUS -->
+<div class="group relative flex flex-col md:flex-row items-center justify-between p-12 bg-surface-container transition-all hover:bg-surface-container-highest border-l-4 border-transparent hover:border-primary">
+<div class="relative z-10">
+<h4 class="text-5xl font-black font-headline uppercase group-hover:text-primary transition-colors">X90 PLUS</h4>
+<p class="text-on-surface-variant font-body mt-2">The flagship experience of grand intelligent travel.</p>
+</div>
+<div class="hidden md:block absolute right-1/4 opacity-0 group-hover:opacity-100 transition-all duration-500 translate-x-10 group-hover:translate-x-0 w-[400px]">
+<img class="w-full h-auto object-contain" data-alt="high-end flagship suv in a dark metallic finish reflecting urban lights at night" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhpGTtvXIGCkF1ycse0tYjlLXRsFmizXYFavhJiB6xdmiA4Pxr_wTD4AmzVekZXC_Z4MhLUIT-rBYGm-cotapudZmFBk8JaZ0Jwac0pzmVKqKHq0rBE8b2d-TW22zbr9je5JwQZnLri9s07KADAdH7BF9UBzh47aXgFOjk_IJ_ctuvYWUEcJ9HN9750BbjDcIIJmQYDPQm6nnOCl2TFbyv8Nnd4QWnpSazVc3ZvJQbO0gbU3iw3d0XDIkBOEp_e-FeCRCvyIzxfAmH"/>
+</div>
+<div class="mt-8 md:mt-0">
+<button class="bg-surface-container-highest border border-primary/20 text-on-surface px-8 py-4 uppercase font-bold text-xs tracking-widest group-hover:bg-primary group-hover:text-on-primary transition-all">VIEW DETAILS</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Jetour Story Section -->
+<section class="flex flex-col md:flex-row min-h-[600px]">
+<div class="w-full md:w-1/2 bg-surface-container-high flex items-center justify-center p-12 md:p-24">
+<div class="max-w-md space-y-8">
+<p class="text-primary font-label uppercase tracking-[0.3em] text-xs">BRAND LEGACY</p>
+<h2 class="text-5xl font-black font-headline uppercase tracking-tighter leading-tight">ENGINEERED FOR THE <span class="text-primary">EXTRAORDINARY</span></h2>
+<p class="text-on-surface-variant font-body leading-loose">
+                        At JETOUR, we don't just build cars; we architect experiences. Every line, every stitch, and every engine stroke is a testament to our commitment to kinetic excellence. Born from a vision of adventure, we empower the modern traveler to conquer horizons with confidence and style.
+                    </p>
+<button class="flex items-center gap-4 text-primary font-black font-headline uppercase tracking-widest group">
+                        THE JETOUR STORY
+                        <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">trending_flat</span>
+</button>
+</div>
+</div>
+<div class="w-full md:w-1/2 relative overflow-hidden">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000" data-alt="premium lifestyle shot of an owner leaning against a jetour car on a mountain pass overlook during twilight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjIgXiac4P4B1YlFdGUXt7v_1PM4hn0N2UafejXc24Su_Ohhqoc3yU5FUNu80JHFJ5s7GN8GiIrRL6xkrW-iC-admvZAaQ_rAu6AHG2_NU2IR48OemPuoxANyP1URQewzO7HYCAaXJe0leALucXjMsusaD52F9Om9k1-nnLC9NBr7uBHfbsrA8OwHmbxZdt6HACW6OdPAMvoLmnPWGPYacTBLqcD6pLzQ4dt-g1pu3cNHnMdQqqhrShRjrHmLl6uMtvT6sacgd8r2B"/>
+<div class="absolute inset-0 bg-primary/10 mix-blend-overlay"></div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#131314] w-full pt-24 pb-12 border-t border-[#353436]">
+<div class="max-w-7xl mx-auto px-12 grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-2">
+<a class="text-4xl font-black text-[#e5c363] mb-8 font-headline uppercase block" href="index.html">JETOUR</a>
+<p class="text-[#e5e2e3]/60 max-w-sm mb-8 leading-relaxed">
+                    Driving the future of automotive luxury through precision engineering and relentless innovation. Join the elite movement.
+                </p>
+<div class="flex gap-6 text-[#e5e2e3]/40">
+<span class="material-symbols-outlined cursor-pointer hover:text-primary transition-colors">share</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-primary transition-colors">public</span>
+<span class="material-symbols-outlined cursor-pointer hover:text-primary transition-colors">mail</span>
+</div>
+</div>
+<div class="space-y-6">
+<h5 class="text-[#e5c363] font-headline font-bold uppercase tracking-widest text-sm">RESOURCES</h5>
+<ul class="space-y-4">
+<li><a class="font-['Inter'] text-xs uppercase tracking-widest text-[#e5e2e3]/60 hover:text-[#e5c363] transition-colors duration-200" href="#">PRIVACY POLICY</a></li>
+<li><a class="font-['Inter'] text-xs uppercase tracking-widest text-[#e5e2e3]/60 hover:text-[#e5c363] transition-colors duration-200" href="#">TERMS OF SERVICE</a></li>
+<li><a class="font-['Inter'] text-xs uppercase tracking-widest text-[#e5e2e3]/60 hover:text-[#e5c363] transition-colors duration-200" href="#">LEGAL NOTICE</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h5 class="text-[#e5c363] font-headline font-bold uppercase tracking-widest text-sm">CONNECT</h5>
+<ul class="space-y-4">
+<li><a class="font-['Inter'] text-xs uppercase tracking-widest text-[#e5e2e3]/60 hover:text-[#e5c363] transition-colors duration-200" href="contact.html">CONTACT US</a></li>
+<li><a class="font-['Inter'] text-xs uppercase tracking-widest text-[#e5e2e3]/60 hover:text-[#e5c363] transition-colors duration-200" href="#">CAREERS</a></li>
+<li><a class="font-['Inter'] text-xs uppercase tracking-widest text-[#e5e2e3]/60 hover:text-[#e5c363] transition-colors duration-200" href="#">COOKIE SETTINGS</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-12 mt-20 pt-8 border-t border-[#353436]/30 flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="font-['Inter'] text-xs uppercase tracking-widest text-[#e5e2e3]/40">
+                © 2024 JETOUR AUTOMOTIVE. ENGINEERED FOR EXCELLENCE.
+            </div>
+<div class="flex items-center gap-8 text-[#e5e2e3]/40">
+<span class="material-symbols-outlined text-lg">verified_user</span>
+<span class="material-symbols-outlined text-lg">language</span>
+</div>
+</div>
+</footer>
+</body></html>
