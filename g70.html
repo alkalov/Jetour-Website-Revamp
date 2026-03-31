@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary-fixed": "#ffe08c",
+                "tertiary-fixed-dim": "#c9c6c1",
+                "outline": "#98907e",
+                "tertiary-container": "#adaba7",
+                "surface-variant": "#353436",
+                "tertiary-fixed": "#e5e2dd",
+                "surface-dim": "#131314",
+                "on-primary-fixed": "#241a00",
+                "on-primary": "#3d2f00",
+                "surface-container-low": "#1c1b1c",
+                "surface-container-lowest": "#0e0e0f",
+                "on-tertiary": "#31302d",
+                "secondary-container": "#4a4642",
+                "secondary-fixed-dim": "#cbc5c0",
+                "on-background": "#e5e2e3",
+                "surface-container-highest": "#353436",
+                "inverse-surface": "#e5e2e3",
+                "inverse-on-surface": "#313031",
+                "on-error": "#690005",
+                "error-container": "#93000a",
+                "surface-bright": "#3a393a",
+                "primary": "#e5c363",
+                "on-primary-container": "#4f3d00",
+                "on-surface": "#e5e2e3",
+                "inverse-primary": "#745b00",
+                "outline-variant": "#4d4637",
+                "secondary-fixed": "#e8e1dc",
+                "on-error-container": "#ffdad6",
+                "on-secondary": "#33302c",
+                "tertiary": "#c9c6c2",
+                "on-tertiary-container": "#40403c",
+                "on-surface-variant": "#d0c5b2",
+                "error": "#ffb4ab",
+                "primary-fixed-dim": "#e5c363",
+                "surface-tint": "#e5c363",
+                "on-tertiary-fixed-variant": "#474743",
+                "on-secondary-fixed": "#1e1b18",
+                "surface-container-high": "#2a2a2b",
+                "secondary": "#cbc5c0",
+                "primary-container": "#c8a84b",
+                "on-tertiary-fixed": "#1c1c19",
+                "on-secondary-fixed-variant": "#4a4642",
+                "background": "#131314",
+                "on-primary-fixed-variant": "#584400",
+                "surface-container": "#201f20",
+                "on-secondary-container": "#bab4af",
+                "surface": "#131314"
+              },
+              fontFamily: {
+                "headline": ["Space Grotesk"],
+                "body": ["Inter"],
+                "label": ["Inter"]
+              },
+              borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+            },
+          },
+        }
+      </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #131314;
+            color: #e5e2e3;
+            font-family: 'Inter', sans-serif;
+        }
+        .kinetic-monolith {
+            text-shadow: 0 0 40px rgba(229, 195, 99, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-[100] bg-[#131314]/90 backdrop-blur-xl shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
+<div class="flex justify-between items-center px-12 py-6 w-full mx-auto">
+<a class="text-3xl font-black tracking-tighter text-[#e5c363]" href="index.html">JETOUR</a>
+<div class="hidden md:flex gap-12">
+<a class="font-['Space_Grotesk'] uppercase tracking-[0.15em] font-bold text-[#e5c363] border-b-2 border-[#e5c363] pb-1" href="models.html">MODELS</a>
+<a class="font-['Space_Grotesk'] uppercase tracking-[0.15em] font-bold text-[#e5e2e3] hover:text-[#e5c363] transition-colors duration-300" href="#">TECHNOLOGY</a>
+<a class="font-['Space_Grotesk'] uppercase tracking-[0.15em] font-bold text-[#e5e2e3] hover:text-[#e5c363] transition-colors duration-300" href="service.html">OWNERSHIP</a>
+<a class="font-['Space_Grotesk'] uppercase tracking-[0.15em] font-bold text-[#e5e2e3] hover:text-[#e5c363] transition-colors duration-300" href="#">EXPERIENCE</a>
+<a class="font-['Space_Grotesk'] uppercase tracking-[0.15em] font-bold text-[#e5e2e3] hover:text-[#e5c363] transition-colors duration-300" href="#">SHOP</a>
+</div>
+<div class="flex items-center gap-8">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-on-surface cursor-pointer hover:text-primary">language</span>
+<span class="material-symbols-outlined text-on-surface cursor-pointer hover:text-primary">location_on</span>
+</div>
+<a class="bg-primary text-on-primary px-6 py-2 font-headline font-bold uppercase tracking-widest text-sm hover:bg-primary-container active:scale-95 transition-all inline-block" href="contact.html">BOOK A TEST DRIVE</a>
+</div>
+</div>
+<div class="bg-[#353436] h-[1px] w-full opacity-20"></div>
+</nav>
+<!-- Hero Section -->
+<section class="relative h-screen w-full flex items-end overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover brightness-50" data-alt="Cinematic side profile of a sleek metallic grey SUV driving on a high-tech coastal road at twilight with golden light reflecting on its curves" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYMpC0fd75WT2pMZGljQu0wtxkahiHLA7YuZ-9NxiZE8yRRJzKCPqysYo3kWMa53szYcYGvyRYMlZrx3if2HXQpgAalu8B99G25j15XQ8Ym2lhC9ANQdMSWqZGO8nBP3Nvz80OxUcYy6iB37Jp6ZnEFxkB5SMdY3hiZJSwLO0vy48w__ny57THHeWCtoC5M0s6MhVwkzf9odBrn4t73TaCSYpapWQEwg2f_S3LPwyKd0ZSdtwPxYqhgfICFag-ovhm3_bol6Gx-IMU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+</div>
+<div class="relative z-10 w-full max-w-7xl mx-auto px-12 pb-32">
+<p class="font-headline text-primary tracking-[0.4em] uppercase mb-4 text-sm font-bold">INTRODUCING THE FLAGSHIP</p>
+<h1 class="font-headline text-8xl md:text-9xl font-black text-on-surface uppercase tracking-tighter leading-none kinetic-monolith">
+                THE JETOUR <span class="text-primary">G70</span>
+</h1>
+<div class="mt-12 flex gap-8">
+<button class="bg-primary text-on-primary px-10 py-4 font-headline font-bold uppercase tracking-widest text-lg hover:bg-primary-container transition-all">EXPLORE DESIGN</button>
+<button class="border border-outline-variant text-on-surface px-10 py-4 font-headline font-bold uppercase tracking-widest text-lg hover:bg-surface-container-highest transition-all">WATCH FILM</button>
+</div>
+</div>
+</section>
+<!-- Specs Highlights Bento Grid -->
+<section class="py-24 bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto px-12">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<!-- Spec 1 -->
+<div class="bg-surface-container-low p-10 flex flex-col justify-between aspect-square">
+<span class="material-symbols-outlined text-primary text-4xl" data-weight="fill">bolt</span>
+<div>
+<h3 class="text-6xl font-headline font-black text-on-surface">904 <span class="text-xl font-medium text-outline">HP</span></h3>
+<p class="font-label text-outline uppercase tracking-widest mt-2 text-xs">Total System Power</p>
+</div>
+</div>
+<!-- Spec 2 -->
+<div class="bg-surface-container-low p-10 flex flex-col justify-between aspect-square">
+<span class="material-symbols-outlined text-primary text-4xl">speed</span>
+<div>
+<h3 class="text-6xl font-headline font-black text-on-surface">3.8 <span class="text-xl font-medium text-outline">S</span></h3>
+<p class="font-label text-outline uppercase tracking-widest mt-2 text-xs">0-100 KM/H Sprint</p>
+</div>
+</div>
+<!-- Spec 3 -->
+<div class="bg-surface-container-low p-10 flex flex-col justify-between aspect-square">
+<span class="material-symbols-outlined text-primary text-4xl">ev_station</span>
+<div>
+<h3 class="text-6xl font-headline font-black text-on-surface">PHEV</h3>
+<p class="font-label text-outline uppercase tracking-widest mt-2 text-xs">Hybrid Propulsion Tech</p>
+</div>
+</div>
+<!-- Spec 4 -->
+<div class="bg-primary p-10 flex flex-col justify-between aspect-square">
+<span class="material-symbols-outlined text-on-primary text-4xl">distance</span>
+<div>
+<h3 class="text-6xl font-headline font-black text-on-primary">1200</h3>
+<p class="font-label text-on-primary/70 uppercase tracking-widest mt-2 text-xs">Combined Range (KM)</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interior Luxury -->
+<section class="py-24 bg-background">
+<div class="max-w-7xl mx-auto px-12 grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+<div class="order-2 md:order-1">
+<h2 class="font-headline text-5xl font-black text-on-surface uppercase mb-8 leading-tight">7-SEAT LUXURY <br/><span class="text-primary">SANCTUARY</span></h2>
+<p class="text-on-surface-variant leading-relaxed mb-8 text-lg">Experience uncompromised space. The G70's cabin is meticulously crafted with fine Nappa leather and sustainable wood accents, providing a first-class experience for all seven passengers. Every surface is designed with tactile precision.</p>
+<div class="grid grid-cols-2 gap-8">
+<div class="border-l-2 border-primary pl-6">
+<p class="text-2xl font-headline font-bold text-on-surface">PANORAMIC</p>
+<p class="text-xs text-outline uppercase tracking-widest">Skyview Glass Roof</p>
+</div>
+<div class="border-l-2 border-primary pl-6">
+<p class="text-2xl font-headline font-bold text-on-surface">ZERO-G</p>
+<p class="text-xs text-outline uppercase tracking-widest">Massage Seating</p>
+</div>
+</div>
+</div>
+<div class="order-1 md:order-2">
+<img class="w-full aspect-[4/5] object-cover shadow-2xl" data-alt="Ultra-modern car interior featuring premium tan leather seats, a minimalist digital dashboard with glowing ambient lighting, and wide panoramic view" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbxCPi893-DAb_BwR-aAJV45cB7yX9TCP3aK4inY8QBDU-JJUMwdcu17zi_UUaMmXbBQKtEM9bqVt_JKxTWn9YItFkJ8-o1G-QZ09nMVY2dqWNjSn2Gd0Yqfi7ysW3-b7v6Gvzos8UQWdipiJduFPvYznre4G9Dxn5xn29ZO6H-z8IDRoRydYhTkzE2FwvJsSzxg9WUpODBKENYN6aQ-DG7Elz0cXlF6DlDTeRUZpplZFKfNLf6Yzi1AdfJHB8ldEe-fcq6tByhsJM"/>
+</div>
+</div>
+</section>
+<!-- Performance: Intelligent Drive -->
+<section class="py-24 bg-surface-container-low overflow-hidden">
+<div class="max-w-7xl mx-auto px-12 flex flex-col items-center text-center">
+<h2 class="font-headline text-5xl font-black text-on-surface uppercase mb-6">INTELLIGENT DRIVE MODE SYSTEM</h2>
+<p class="text-on-surface-variant max-w-3xl mb-16 text-lg">Adapt to any terrain with millisecond precision. Our proprietary system continuously monitors road conditions and adjusts torque distribution, suspension stiffness, and throttle response.</p>
+<div class="w-full relative">
+<img class="w-full h-[500px] object-cover brightness-75" data-alt="Dynamic shot of a car's wheel and suspension system moving through a rugged mountain terrain with motion blur and sharp lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxz-H4o9uusPi2T1IuunHeWoBWpjl8t6iKaMWP-EGrVP5F-j76inNAEkV_JzYsHYn9m5xxNXmFXh74vw5GfvB17rLBvb9-CsjDYCRQgsW5wepquX0Jc3vdlrKZQSKoXhclxuRHeSqBhr-Kq1im8wYHrYt5p1vNYm1SWbw2h6bH1ETjeFLWv_Ws9wfgtmfX_bZws-0IW_jsn7za8jIGUKUn7BjkRCWpG9f2u_IVUkpyJ6o0J62b0c-r9duYwePEg75S1HTJqIw_potB"/>
+<div class="absolute inset-0 flex items-center justify-around px-12">
+<div class="bg-background/80 backdrop-blur-md p-8 w-64 text-left border-b-4 border-primary">
+<span class="text-primary font-headline font-bold text-lg mb-2 block">01 OFF-ROAD</span>
+<p class="text-xs text-on-surface-variant uppercase tracking-tighter">Maximum torque for challenging surfaces.</p>
+</div>
+<div class="bg-background/80 backdrop-blur-md p-8 w-64 text-left border-b-4 border-primary">
+<span class="text-primary font-headline font-bold text-lg mb-2 block">02 SPORT+</span>
+<p class="text-xs text-on-surface-variant uppercase tracking-tighter">Aggressive shifts and stiffened chassis.</p>
+</div>
+<div class="bg-background/80 backdrop-blur-md p-8 w-64 text-left border-b-4 border-primary">
+<span class="text-primary font-headline font-bold text-lg mb-2 block">03 ECO-SENSE</span>
+<p class="text-xs text-on-surface-variant uppercase tracking-tighter">Optimized hybrid efficiency for urban flow.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Safety Section -->
+<section class="py-32 bg-background relative overflow-hidden">
+<div class="max-w-7xl mx-auto px-12 grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+<div>
+<img class="w-full aspect-square object-cover opacity-80" data-alt="Abstract visualization of lidar laser beams scanning a dark city environment with glowing technological outlines on buildings and roads" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtXLCIyLM4vqi9CMSX-H4DKKI36PL63Xzu0AL8LPS8XugVCXYOZvISggB0V-M7mWHwDPW_DqvYaw2pxvGKZ1R77CXdrcT96eOhR0qg1uKIPw_FK39lAZevA0LdhTqV_kMjj1iYgkAA6vup2m89tc_aciU-qxJ-Jrb7ikKPOxlhCdKUVEaX4tD72viWAwdOe0A1s6MbBhraycXixrkJvyK5jjSiUiUFpEM51iuEKNMUdqDkeBBbNu9E5brNCo4RXt39dXxl8LN3s5EH"/>
+</div>
+<div>
+<p class="font-headline text-primary tracking-[0.3em] uppercase mb-4 text-xs font-bold">SAFETY ARCHITECTURE</p>
+<h2 class="font-headline text-5xl font-black text-on-surface uppercase mb-8 leading-tight">LIDAR-ENHANCED <br/>PROTECTION</h2>
+<div class="space-y-8">
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-primary text-3xl">radar</span>
+<div>
+<h4 class="font-headline font-bold text-on-surface mb-2 uppercase">360° LIDAR ARRAY</h4>
+<p class="text-sm text-on-surface-variant">Real-time mapping of surrounding objects up to 250m, even in zero-visibility weather.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-primary text-3xl">shield</span>
+<div>
+<h4 class="font-headline font-bold text-on-surface mb-2 uppercase">ADAPTIVE COLLISION AVOIDANCE</h4>
+<p class="text-sm text-on-surface-variant">Autonomous emergency braking and steering correction powered by the AI-Sense core.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-primary text-3xl">visibility</span>
+<div>
+<h4 class="font-headline font-bold text-on-surface mb-2 uppercase">NIGHT VISION HUD</h4>
+<p class="text-sm text-on-surface-variant">Thermal imaging projected onto the windshield for safer nighttime driving across any terrain.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Specifications Table -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-5xl mx-auto px-12">
+<h2 class="font-headline text-4xl font-black text-on-surface uppercase mb-12 text-center">TECHNICAL <span class="text-primary">SPECIFICATIONS</span></h2>
+<div class="space-y-0">
+<div class="grid grid-cols-2 py-8 border-b border-surface-container-highest">
+<span class="font-label uppercase tracking-widest text-outline text-sm">ENGINE TYPE</span>
+<span class="font-headline font-bold text-on-surface text-xl uppercase">2.0L TURBOCHARGED HYBRID PHEV</span>
+</div>
+<div class="grid grid-cols-2 py-8 border-b border-surface-container-highest">
+<span class="font-label uppercase tracking-widest text-outline text-sm">MAXIMUM TORQUE</span>
+<span class="font-headline font-bold text-on-surface text-xl uppercase">1,250 NM COMBINED</span>
+</div>
+<div class="grid grid-cols-2 py-8 border-b border-surface-container-highest">
+<span class="font-label uppercase tracking-widest text-outline text-sm">TRANSMISSION</span>
+<span class="font-headline font-bold text-on-surface text-xl uppercase">DHT 3-SPEED DUAL-MOTOR SYSTEM</span>
+</div>
+<div class="grid grid-cols-2 py-8 border-b border-surface-container-highest">
+<span class="font-label uppercase tracking-widest text-outline text-sm">DRIVE SYSTEM</span>
+<span class="font-headline font-bold text-on-surface text-xl uppercase">INTELLIGENT ALL-WHEEL DRIVE (i-AWD)</span>
+</div>
+<div class="grid grid-cols-2 py-8 border-b border-surface-container-highest">
+<span class="font-label uppercase tracking-widest text-outline text-sm">DIMENSIONS (L/W/H)</span>
+<span class="font-headline font-bold text-on-surface text-xl uppercase">4,900MM / 1,930MM / 1,800MM</span>
+</div>
+<div class="grid grid-cols-2 py-8">
+<span class="font-label uppercase tracking-widest text-outline text-sm">WHEELBASE</span>
+<span class="font-headline font-bold text-on-surface text-xl uppercase">2,850 MM</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Bottom Action Bar (Fixed Mobile / Large Desktop) -->
+<div class="fixed bottom-0 left-0 w-full bg-surface-container-highest border-t border-outline-variant/20 z-50">
+<div class="max-w-7xl mx-auto px-12 py-6 flex justify-between items-center">
+<div class="flex items-baseline gap-4">
+<span class="font-headline text-2xl font-black text-on-surface">JETOUR G70</span>
+<span class="text-primary font-bold text-sm tracking-widest uppercase">From $54,900</span>
+</div>
+<div class="flex gap-4">
+<button class="bg-transparent border border-primary text-primary px-8 py-3 font-headline font-bold uppercase tracking-widest text-sm hover:bg-primary/5 transition-all">DOWNLOAD BROCHURE</button>
+<a class="bg-primary text-on-primary px-12 py-3 font-headline font-bold uppercase tracking-widest text-sm hover:bg-primary-container transition-all inline-block" href="contact.html">BOOK A TEST DRIVE</a>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<footer class="bg-[#131314] w-full pt-24 pb-32 border-t border-[#353436]">
+<div class="max-w-7xl mx-auto px-12 grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-1">
+<a class="text-xl font-black text-[#e5c363] mb-8 inline-block" href="index.html">JETOUR</a>
+<p class="text-[#e5e2e3]/60 text-sm leading-relaxed mb-6 italic">Engineering for excellence. Driven by the future of luxury exploration.</p>
+</div>
+<div>
+<h5 class="text-[#e5c363] font-headline font-bold uppercase mb-6 tracking-widest text-sm">MODELS</h5>
+<ul class="space-y-4">
+<li><a class="font-['Inter'] text-xs uppercase tracking-widest text-[#e5e2e3]/60 hover:text-[#e5c363] transition-colors" href="#">DASHING</a></li>
+<li><a class="font-['Inter'] text-xs uppercase tracking-widest text-[#e5e2e3]/60 hover:text-[#e5c363] transition-colors" href="#">T2 SAVAGE</a></li>
+<li><a class="font-['Inter'] text-xs uppercase tracking-widest text-[#e5c363]" href="#">G70 FLAGSHIP</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-[#e5c363] font-headline font-bold uppercase mb-6 tracking-widest text-sm">CONTACT</h5>
+<ul class="space-y-4">
+<li><a class="font-['Inter'] text-xs uppercase tracking-widest text-[#e5e2e3]/60 hover:text-[#e5c363] transition-colors" href="contact.html">LOCATE A DEALER</a></li>
+<li><a class="font-['Inter'] text-xs uppercase tracking-widest text-[#e5e2e3]/60 hover:text-[#e5c363] transition-colors" href="contact.html">CUSTOMER SUPPORT</a></li>
+<li><a class="font-['Inter'] text-xs uppercase tracking-widest text-[#e5e2e3]/60 hover:text-[#e5c363] transition-colors" href="contact.html">FLEET INQUIRIES</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-[#e5c363] font-headline font-bold uppercase mb-6 tracking-widest text-sm">LEGAL</h5>
+<ul class="space-y-4">
+<li><a class="font-['Inter'] text-xs uppercase tracking-widest text-[#e5e2e3]/60 hover:text-[#e5c363] transition-colors" href="#">PRIVACY POLICY</a></li>
+<li><a class="font-['Inter'] text-xs uppercase tracking-widest text-[#e5e2e3]/60 hover:text-[#e5c363] transition-colors" href="#">TERMS OF SERVICE</a></li>
+<li><a class="font-['Inter'] text-xs uppercase tracking-widest text-[#e5e2e3]/60 hover:text-[#e5c363] transition-colors" href="#">COOKIE SETTINGS</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-12 mt-20">
+<p class="font-['Inter'] text-[10px] uppercase tracking-[0.3em] text-[#e5e2e3]/40 text-center">© 2024 JETOUR AUTOMOTIVE. ENGINEERED FOR EXCELLENCE.</p>
+</div>
+</footer>
+</body></html>
