@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-fixed": "#ffe08c",
+              "tertiary-fixed-dim": "#c9c6c1",
+              "outline": "#98907e",
+              "tertiary-container": "#adaba7",
+              "surface-variant": "#353436",
+              "tertiary-fixed": "#e5e2dd",
+              "surface-dim": "#131314",
+              "on-primary-fixed": "#241a00",
+              "on-primary": "#3d2f00",
+              "surface-container-low": "#1c1b1c",
+              "surface-container-lowest": "#0e0e0f",
+              "on-tertiary": "#31302d",
+              "secondary-container": "#4a4642",
+              "secondary-fixed-dim": "#cbc5c0",
+              "on-background": "#e5e2e3",
+              "surface-container-highest": "#353436",
+              "inverse-surface": "#e5e2e3",
+              "inverse-on-surface": "#313031",
+              "on-error": "#690005",
+              "error-container": "#93000a",
+              "surface-bright": "#3a393a",
+              "primary": "#e5c363",
+              "on-primary-container": "#4f3d00",
+              "on-surface": "#e5e2e3",
+              "inverse-primary": "#745b00",
+              "outline-variant": "#4d4637",
+              "secondary-fixed": "#e8e1dc",
+              "on-error-container": "#ffdad6",
+              "on-secondary": "#33302c",
+              "tertiary": "#c9c6c2",
+              "on-tertiary-container": "#40403c",
+              "on-surface-variant": "#d0c5b2",
+              "error": "#ffb4ab",
+              "primary-fixed-dim": "#e5c363",
+              "surface-tint": "#e5c363",
+              "on-tertiary-fixed-variant": "#474743",
+              "on-secondary-fixed": "#1e1b18",
+              "surface-container-high": "#2a2a2b",
+              "secondary": "#cbc5c0",
+              "primary-container": "#c8a84b",
+              "on-tertiary-fixed": "#1c1c19",
+              "on-secondary-fixed-variant": "#4a4642",
+              "background": "#131314",
+              "on-primary-fixed-variant": "#584400",
+              "surface-container": "#201f20",
+              "on-secondary-container": "#bab4af",
+              "surface": "#131314"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        background-color: #131314;
+        color: #e5e2e3;
+        font-family: 'Inter', sans-serif;
+      }
+      .headline-font {
+        font-family: 'Space Grotesk', sans-serif;
+      }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-primary selection:text-on-primary">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-[100] bg-[#131314]/90 backdrop-blur-xl shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
+<div class="flex justify-between items-center px-12 py-6 w-full mx-auto">
+<a class="text-3xl font-black tracking-tighter text-[#e5c363]" href="index.html">JETOUR</a>
+<div class="hidden md:flex items-center space-x-12">
+<a class="font-['Space_Grotesk'] uppercase tracking-[0.15em] font-bold text-[#e5c363] border-b-2 border-[#e5c363] pb-1" href="models.html">MODELS</a>
+<a class="font-['Space_Grotesk'] uppercase tracking-[0.15em] font-bold text-[#e5e2e3] hover:text-[#e5c363] transition-colors duration-300" href="#">TECHNOLOGY</a>
+<a class="font-['Space_Grotesk'] uppercase tracking-[0.15em] font-bold text-[#e5e2e3] hover:text-[#e5c363] transition-colors duration-300" href="service.html">OWNERSHIP</a>
+<a class="font-['Space_Grotesk'] uppercase tracking-[0.15em] font-bold text-[#e5e2e3] hover:text-[#e5c363] transition-colors duration-300" href="#">EXPERIENCE</a>
+<a class="font-['Space_Grotesk'] uppercase tracking-[0.15em] font-bold text-[#e5e2e3] hover:text-[#e5c363] transition-colors duration-300" href="#">SHOP</a>
+</div>
+<div class="flex items-center space-x-8">
+<div class="flex space-x-4">
+<span class="material-symbols-outlined text-[#e5e2e3] hover:text-[#e5c363] cursor-pointer transition-colors" data-icon="language">language</span>
+<span class="material-symbols-outlined text-[#e5e2e3] hover:text-[#e5c363] cursor-pointer transition-colors" data-icon="location_on">location_on</span>
+</div>
+<button class="bg-[#e5c363] text-[#131314] px-6 py-2 font-bold uppercase tracking-widest text-xs hover:scale-105 active:scale-95 transition-all">BOOK A TEST DRIVE</button>
+</div>
+</div>
+<div class="bg-[#353436] h-[1px] w-full opacity-20"></div>
+</nav>
+<main class="pt-32 pb-24 min-h-screen">
+<!-- Hero Header -->
+<header class="px-12 mb-16 max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-8">
+<div>
+<span class="text-primary font-headline uppercase tracking-[0.3em] text-xs font-bold mb-4 block">PREMIUM MOBILITY</span>
+<h1 class="text-6xl md:text-8xl font-headline font-black uppercase tracking-tighter leading-none">EXPLORE THE <br/><span class="text-transparent border-t-0 bg-clip-text bg-gradient-to-r from-primary to-primary-container">LINEUP</span></h1>
+</div>
+<div class="max-w-md">
+<p class="text-on-surface-variant font-body text-sm leading-relaxed opacity-80">
+                        Engineered for the bold. Experience the fusion of avant-garde design and relentless performance across our diverse range of SUVs and Off-Road masters.
+                    </p>
+</div>
+</div>
+</header>
+<!-- Filter Bar -->
+<section class="px-12 mb-12 max-w-7xl mx-auto">
+<div class="bg-surface-container-low p-1 flex items-center gap-2 rounded-lg w-fit border border-outline-variant/10">
+<button class="px-8 py-3 bg-primary text-on-primary font-headline font-bold uppercase tracking-widest text-xs rounded-sm transition-all">ALL</button>
+<button class="px-8 py-3 text-on-surface-variant hover:text-primary font-headline font-bold uppercase tracking-widest text-xs rounded-sm transition-all">HYBRID</button>
+<button class="px-8 py-3 text-on-surface-variant hover:text-primary font-headline font-bold uppercase tracking-widest text-xs rounded-sm transition-all">ICE</button>
+</div>
+</section>
+<!-- Model Grid -->
+<section class="px-12 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1: JETOUR T2 -->
+<div class="group bg-surface-container-low hover:bg-surface-container-high transition-all duration-500 overflow-hidden relative">
+<div class="p-10">
+<div class="flex justify-between items-start mb-4">
+<h3 class="text-3xl font-headline font-black uppercase tracking-tight group-hover:text-primary transition-colors">T2</h3>
+<span class="bg-surface-container-highest px-3 py-1 text-[10px] font-bold tracking-widest text-on-surface-variant uppercase">OFF-ROAD</span>
+</div>
+<div class="mb-12 aspect-[16/10] overflow-hidden">
+<img alt="JETOUR T2" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" data-alt="Rugged silver off-road SUV driving through a rocky desert landscape with dramatic mountain backdrop and warm sunset lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6ONWRD9dwbL-XcX9OfZM-jj08P5OlsF0ykkNhX3VuqTEsjoCTTBSjDqXvItCKU__RxY3sSM99DH5VUVrXGxV1TqlVxVeXhUZ17ln0W2zxJ6dbZiTX4Y6s8KMUMmcsUQAp0Z4-XnU0NaKxPu8IXsGEyCAgS2ZZlpGmM_Y4HkwmIa4o4IFBfW4ONFLWAFei7WgyKu4dtRQ3_oDqgfMmFB6WXO25Ap3YR5hLZoD3KsmSaE6kIQQz3FgUm0_1oSZpJ9YB3SytQwo8Av3G"/>
+</div>
+<div class="flex items-center gap-4 mb-8">
+<div class="flex flex-col">
+<span class="text-[10px] text-on-surface-variant uppercase tracking-widest mb-1">Starting From</span>
+<span class="text-xl font-headline font-bold text-primary">$32,500</span>
+</div>
+<div class="ml-auto flex items-center gap-2 bg-surface-container-highest px-3 py-2">
+<span class="material-symbols-outlined text-sm text-primary" data-icon="settings_input_component">settings_input_component</span>
+<span class="text-[10px] font-bold tracking-tighter">ALL-WHEEL DRIVE</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<button class="border border-outline-variant/30 text-on-surface py-4 text-xs font-bold uppercase tracking-widest hover:bg-surface-container-highest transition-colors">EXPLORE</button>
+<button class="bg-primary text-on-primary py-4 text-xs font-bold uppercase tracking-widest hover:opacity-90 transition-opacity">BOOK TEST DRIVE</button>
+</div>
+</div>
+</div>
+<!-- Card 2: DASHING -->
+<div class="group bg-surface-container-low hover:bg-surface-container-high transition-all duration-500 overflow-hidden relative">
+<div class="p-10">
+<div class="flex justify-between items-start mb-4">
+<h3 class="text-3xl font-headline font-black uppercase tracking-tight group-hover:text-primary transition-colors">DASHING</h3>
+<span class="bg-surface-container-highest px-3 py-1 text-[10px] font-bold tracking-widest text-on-surface-variant uppercase">URBAN</span>
+</div>
+<div class="mb-12 aspect-[16/10] overflow-hidden">
+<img alt="JETOUR DASHING" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" data-alt="Sleek modern black luxury SUV parked in a futuristic urban setting with neon city reflections and sharp lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlgybFU1Mpq9sVORu8JPDqC5f0pOfRyFcfe4OgQ1rfTZpNEZH7H7Ydq63nO-BOOJkWRrCHCareNZ7DFZNBopp9XEW6MNePSwsFvGnxP9giJ9X5C8_5VVBN4_khEGNQl100mMMixtEfTxosJ_vssFRYUMilKg82VwApPi41aEOnPdF4ppC6TI2LWFhpUHct3Rl490tCc0iyejQ1HQ7KtP0IUQdeaQizwyHU-2IExYBiArGqJeEvTEela4BnYjpDGVZHR-imATYiq-0q"/>
+</div>
+<div class="flex items-center gap-4 mb-8">
+<div class="flex flex-col">
+<span class="text-[10px] text-on-surface-variant uppercase tracking-widest mb-1">Starting From</span>
+<span class="text-xl font-headline font-bold text-primary">$28,900</span>
+</div>
+<div class="ml-auto flex items-center gap-2 bg-surface-container-highest px-3 py-2">
+<span class="material-symbols-outlined text-sm text-primary" data-icon="bolt">bolt</span>
+<span class="text-[10px] font-bold tracking-tighter">TURBOCHARGED</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<button class="border border-outline-variant/30 text-on-surface py-4 text-xs font-bold uppercase tracking-widest hover:bg-surface-container-highest transition-colors">EXPLORE</button>
+<button class="bg-primary text-on-primary py-4 text-xs font-bold uppercase tracking-widest hover:opacity-90 transition-opacity">BOOK TEST DRIVE</button>
+</div>
+</div>
+</div>
+<!-- Card 3: X70 PLUS -->
+<div class="group bg-surface-container-low hover:bg-surface-container-high transition-all duration-500 overflow-hidden relative">
+<div class="p-10">
+<div class="flex justify-between items-start mb-4">
+<h3 class="text-3xl font-headline font-black uppercase tracking-tight group-hover:text-primary transition-colors">X70 PLUS</h3>
+<span class="bg-surface-container-highest px-3 py-1 text-[10px] font-bold tracking-widest text-on-surface-variant uppercase">FAMILY</span>
+</div>
+<div class="mb-12 aspect-[16/10] overflow-hidden">
+<img alt="JETOUR X70 PLUS" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" data-alt="Large metallic white SUV on a coastal road with deep blue ocean background during bright midday light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuXqxVk-FkrYqQ46gJTOfOuRt3pvalSlguJc0i7vNdnur2Bo8UwSZPb6BwCC8uHu0bfmlzXZICwN8QYH6N2KYKEfwHnMZgRkiBGtvtCrzkIRplmkZKfMQSUXrZWqjGJojukvJMD7q-fYyYJ0CwrnMLha9_BfDXsOZCe29xsPIlj2SJa-RN_u8Lfsf5KuCgofr_8Yd1WTXgEWDBlCAffFYwisgKQr2IasMUECg_NlkTjzem3j46vSvchua_8ifvXzXCiF-o9j0in6l1"/>
+</div>
+<div class="flex items-center gap-4 mb-8">
+<div class="flex flex-col">
+<span class="text-[10px] text-on-surface-variant uppercase tracking-widest mb-1">Starting From</span>
+<span class="text-xl font-headline font-bold text-primary">$24,500</span>
+</div>
+<div class="ml-auto flex items-center gap-2 bg-surface-container-highest px-3 py-2">
+<span class="material-symbols-outlined text-sm text-primary" data-icon="groups">groups</span>
+<span class="text-[10px] font-bold tracking-tighter">7-SEATER</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<button class="border border-outline-variant/30 text-on-surface py-4 text-xs font-bold uppercase tracking-widest hover:bg-surface-container-highest transition-colors">EXPLORE</button>
+<button class="bg-primary text-on-primary py-4 text-xs font-bold uppercase tracking-widest hover:opacity-90 transition-opacity">BOOK TEST DRIVE</button>
+</div>
+</div>
+</div>
+<!-- Card 4: X90 PLUS -->
+<div class="group bg-surface-container-low hover:bg-surface-container-high transition-all duration-500 overflow-hidden relative">
+<div class="p-10">
+<div class="flex justify-between items-start mb-4">
+<h3 class="text-3xl font-headline font-black uppercase tracking-tight group-hover:text-primary transition-colors">X90 PLUS</h3>
+<span class="bg-surface-container-highest px-3 py-1 text-[10px] font-bold tracking-widest text-on-surface-variant uppercase">FLAGSHIP</span>
+</div>
+<div class="mb-12 aspect-[16/10] overflow-hidden">
+<img alt="JETOUR X90 PLUS" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" data-alt="Premium navy blue full-size SUV parked in front of a modern architectural glass building with dramatic sky reflection" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCufk_spXxA9GMQG1cAUfjTkJixaLDMRzxYEoAi_4FWOADTc9hGUzsg_-ixXvGRGlM5KT_aIH3TfCJpPLN0R_MyRTc1zrjQS31ZYJxnPxgkGvdn_BRJZPnmnA8ikeubPMfkk83OgzieG1Qf5Sy1hAmbJmbxClMf0N9bKC5-hhbRMhajtK-_fe58YP9uO6HSGdLj5FI_qDkV29AF2lWnzK6MxSVsXPkQFiNRV37uVuFVidBbRvVjlDv3ESehYW4O3vnkz5d4EdAcUvhH"/>
+</div>
+<div class="flex items-center gap-4 mb-8">
+<div class="flex flex-col">
+<span class="text-[10px] text-on-surface-variant uppercase tracking-widest mb-1">Starting From</span>
+<span class="text-xl font-headline font-bold text-primary">$36,200</span>
+</div>
+<div class="ml-auto flex items-center gap-2 bg-surface-container-highest px-3 py-2">
+<span class="material-symbols-outlined text-sm text-primary" data-icon="king_bed">king_bed</span>
+<span class="text-[10px] font-bold tracking-tighter">LUXURY CABIN</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<button class="border border-outline-variant/30 text-on-surface py-4 text-xs font-bold uppercase tracking-widest hover:bg-surface-container-highest transition-colors">EXPLORE</button>
+<button class="bg-primary text-on-primary py-4 text-xs font-bold uppercase tracking-widest hover:opacity-90 transition-opacity">BOOK TEST DRIVE</button>
+</div>
+</div>
+</div>
+<!-- Card 5: G70 -->
+<div class="group bg-surface-container-low hover:bg-surface-container-high transition-all duration-500 overflow-hidden relative">
+<div class="p-10">
+<div class="flex justify-between items-start mb-4">
+<h3 class="text-3xl font-headline font-black uppercase tracking-tight group-hover:text-primary transition-colors">G70</h3>
+<span class="bg-surface-container-highest px-3 py-1 text-[10px] font-bold tracking-widest text-on-surface-variant uppercase">GRAND TOURER</span>
+</div>
+<div class="mb-12 aspect-[16/10] overflow-hidden">
+<img alt="JETOUR G70" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" data-alt="Aerodynamic performance coupe-SUV in crimson red accelerating on a high-speed track with motion blur and sharp highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOibrU7h2L59EEWNGHoirFC9xAFGkcCiz_wK1r-_4rtRywJzTXBI7IZ5uF1ceNWRooCRXoV51wCwzwnglC-BiJa-qBisF07weJG0Ejabmq9TbSFoabmco_TtcENKAGnxgru5cjGRjDNhH1-v2Ygt2iLoEHyzZbUX0u-kkq1_0HyQZIZdQJaBPSLUAdWwM5S2eSqEaWf9lyycBk4Bgsi8mtpjL0PsGFWraIM8lAXAk7eNu2VnyoTN7VuW78_5M-s2Dm3vPmdWwxAAqy"/>
+</div>
+<div class="flex items-center gap-4 mb-8">
+<div class="flex flex-col">
+<span class="text-[10px] text-on-surface-variant uppercase tracking-widest mb-1">Starting From</span>
+<span class="text-xl font-headline font-bold text-primary">$41,000</span>
+</div>
+<div class="ml-auto flex items-center gap-2 bg-surface-container-highest px-3 py-2">
+<span class="material-symbols-outlined text-sm text-primary" data-icon="speed">speed</span>
+<span class="text-[10px] font-bold tracking-tighter">PERFORMANCE</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<a class="border border-outline-variant/30 text-on-surface py-4 text-xs font-bold uppercase tracking-widest hover:bg-surface-container-highest transition-colors flex items-center justify-center" href="g70.html">EXPLORE</a>
+<button class="bg-primary text-on-primary py-4 text-xs font-bold uppercase tracking-widest hover:opacity-90 transition-opacity">BOOK TEST DRIVE</button>
+</div>
+</div>
+</div>
+<!-- Card 6: T1 -->
+<div class="group bg-surface-container-low hover:bg-surface-container-high transition-all duration-500 overflow-hidden relative">
+<div class="p-10">
+<div class="flex justify-between items-start mb-4">
+<h3 class="text-3xl font-headline font-black uppercase tracking-tight group-hover:text-primary transition-colors">T1</h3>
+<span class="bg-surface-container-highest px-3 py-1 text-[10px] font-bold tracking-widest text-on-surface-variant uppercase">ADVENTURE</span>
+</div>
+<div class="mb-12 aspect-[16/10] overflow-hidden">
+<img alt="JETOUR T1" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" data-alt="Compact grey rugged SUV parked beside a pine forest near a lake at misty dawn with moody atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8NCx1iQhDP5pPpWRwrfoaQJp7qs1apG67RegaHneV9aXpDlvXKmIA8eDB_AC1qWJ87VFeOehLRy6c-qm5WmzqSZbZZHfzNAlCgZ6rJzi7kD48y6mhdiOdEc3RIJ3e7M9eJE5K6uLZ_Y5pl6gHeBL1pj1bnhhD4C120fzczQUzRRKC558hlbiLLERiYah2w_bK-m7EVeLClV6yKFsd6yjhVYEH_Kr2YL1H0rlmh1PBP6HPdi7C4byD8yEAqKUXu9FTiZr3KoPetdan"/>
+</div>
+<div class="flex items-center gap-4 mb-8">
+<div class="flex flex-col">
+<span class="text-[10px] text-on-surface-variant uppercase tracking-widest mb-1">Starting From</span>
+<span class="text-xl font-headline font-bold text-primary">$21,800</span>
+</div>
+<div class="ml-auto flex items-center gap-2 bg-surface-container-highest px-3 py-2">
+<span class="material-symbols-outlined text-sm text-primary" data-icon="explore">explore</span>
+<span class="text-[10px] font-bold tracking-tighter">TRAIL READY</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<button class="border border-outline-variant/30 text-on-surface py-4 text-xs font-bold uppercase tracking-widest hover:bg-surface-container-highest transition-colors">EXPLORE</button>
+<button class="bg-primary text-on-primary py-4 text-xs font-bold uppercase tracking-widest hover:opacity-90 transition-opacity">BOOK TEST DRIVE</button>
+</div>
+</div>
+</div>
+<!-- Card 7: X50 -->
+<div class="group bg-surface-container-low hover:bg-surface-container-high transition-all duration-500 overflow-hidden relative">
+<div class="p-10">
+<div class="flex justify-between items-start mb-4">
+<h3 class="text-3xl font-headline font-black uppercase tracking-tight group-hover:text-primary transition-colors">X50</h3>
+<span class="bg-surface-container-highest px-3 py-1 text-[10px] font-bold tracking-widest text-on-surface-variant uppercase">COMPACT</span>
+</div>
+<div class="mb-12 aspect-[16/10] overflow-hidden">
+<img alt="JETOUR X50" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" data-alt="Nimble electric-blue crossover SUV weaving through a busy city street with soft golden hour light and bokeh effect" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8eSQJcxW0CxZMcSsJxKPznHaiAgpHBZ279yrk2X-oXhJjteEOXBZaRsSJQAriMKGkbEO17uLAyC5-MsCrbjmj8wQ-Ms0KwBnwuYYkI4mzgF_MjibKXhFd7n3tfWMcrXjVSxoSmmRvXIgakKldGet92XSYBZRxc_tuRoiEhCJe2mJDZquVPOYNTGZ1grLt6lXlENXatkg1VcJOy7OcMrd-B09L1g2SL1o751Pkm-0ckZ31sM3p3y7Mazg0QCkLFGYowHdJmoSJuJfF"/>
+</div>
+<div class="flex items-center gap-4 mb-8">
+<div class="flex flex-col">
+<span class="text-[10px] text-on-surface-variant uppercase tracking-widest mb-1">Starting From</span>
+<span class="text-xl font-headline font-bold text-primary">$18,900</span>
+</div>
+<div class="ml-auto flex items-center gap-2 bg-surface-container-highest px-3 py-2">
+<span class="material-symbols-outlined text-sm text-primary" data-icon="eco">eco</span>
+<span class="text-[10px] font-bold tracking-tighter">ECO MODE</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<button class="border border-outline-variant/30 text-on-surface py-4 text-xs font-bold uppercase tracking-widest hover:bg-surface-container-highest transition-colors">EXPLORE</button>
+<button class="bg-primary text-on-primary py-4 text-xs font-bold uppercase tracking-widest hover:opacity-90 transition-opacity">BOOK TEST DRIVE</button>
+</div>
+</div>
+</div>
+<!-- Card 8: X70 FL -->
+<div class="group bg-surface-container-low hover:bg-surface-container-high transition-all duration-500 overflow-hidden relative">
+<div class="p-10">
+<div class="flex justify-between items-start mb-4">
+<h3 class="text-3xl font-headline font-black uppercase tracking-tight group-hover:text-primary transition-colors">X70 FL</h3>
+<span class="bg-surface-container-highest px-3 py-1 text-[10px] font-bold tracking-widest text-on-surface-variant uppercase">FACELIFT</span>
+</div>
+<div class="mb-12 aspect-[16/10] overflow-hidden">
+<img alt="JETOUR X70 FL" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" data-alt="Gunmetal grey luxury SUV highlighting sharp new headlights and front grille design in a professional studio setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDS4wWxSLqSQF1VKMv98g3Lv7l4HP0uBLDTz_xmOrpvv0DyYp-f5BCi-0UflCis30loPwYbWDqSW8VZWUFiXdvS68bKpywZx6_04csd7gNgUebPvOK0JD0g4madMbZbn1-R9nGBCgaz9eXVtfx1ZSJ9UJT5gMUwnPuigo4eq_mXhrSkaYrFu_0EFm-AjkKWrXUCZt9AaFmPsraYPMC9hxZa0ZNOmlmevWFPnbvLTkOWsm73JuFkdND-du4eQuX3n7i1V6aecornJLnZ"/>
+</div>
+<div class="flex items-center gap-4 mb-8">
+<div class="flex flex-col">
+<span class="text-[10px] text-on-surface-variant uppercase tracking-widest mb-1">Starting From</span>
+<span class="text-xl font-headline font-bold text-primary">$23,400</span>
+</div>
+<div class="ml-auto flex items-center gap-2 bg-surface-container-highest px-3 py-2">
+<span class="material-symbols-outlined text-sm text-primary" data-icon="light_mode">light_mode</span>
+<span class="text-[10px] font-bold tracking-tighter">LED MATRIX</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<button class="border border-outline-variant/30 text-on-surface py-4 text-xs font-bold uppercase tracking-widest hover:bg-surface-container-highest transition-colors">EXPLORE</button>
+<button class="bg-primary text-on-primary py-4 text-xs font-bold uppercase tracking-widest hover:opacity-90 transition-opacity">BOOK TEST DRIVE</button>
+</div>
+</div>
+</div>
+<!-- CTA Card -->
+<div class="flex flex-col items-center justify-center border-2 border-dashed border-outline-variant/20 p-12 text-center group hover:border-primary/40 transition-colors">
+<span class="material-symbols-outlined text-6xl text-primary mb-6" data-icon="add_circle">add_circle</span>
+<h3 class="text-2xl font-headline font-bold uppercase tracking-tight mb-4">NOT FINDING YOUR MATCH?</h3>
+<p class="text-on-surface-variant text-sm mb-8 opacity-70">Compare our full lineup or build your custom Jetour with our configurator tool.</p>
+<button class="bg-transparent border-b-2 border-primary text-primary px-4 py-2 font-bold uppercase tracking-widest text-xs hover:tracking-[0.2em] transition-all">START CONFIGURING</button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#131314] w-full pt-24 pb-12 border-t border-[#353436]">
+<div class="max-w-7xl mx-auto px-12 grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-2">
+<a class="text-xl font-black text-[#e5c363] mb-8 block" href="index.html">JETOUR</a>
+<p class="text-[#e5e2e3]/60 text-sm max-w-sm mb-8">
+                    Pushing the boundaries of automotive excellence through intelligent technology and daring design. Join the journey of discovery.
+                </p>
+</div>
+<div class="space-y-4">
+<h4 class="font-headline text-[#e5c363] text-xs font-bold tracking-widest uppercase">Navigation</h4>
+<div class="flex flex-col space-y-2">
+<a class="font-['Inter'] text-xs uppercase tracking-widest text-[#e5e2e3]/60 hover:text-[#e5c363] transition-colors duration-200" href="models.html">MODELS</a>
+<a class="font-['Inter'] text-xs uppercase tracking-widest text-[#e5e2e3]/60 hover:text-[#e5c363] transition-colors duration-200" href="contact.html">CONTACT US</a>
+<a class="font-['Inter'] text-xs uppercase tracking-widest text-[#e5e2e3]/60 hover:text-[#e5c363] transition-colors duration-200" href="#">CAREERS</a>
+</div>
+</div>
+<div class="space-y-4">
+<h4 class="font-headline text-[#e5c363] text-xs font-bold tracking-widest uppercase">Legal</h4>
+<div class="flex flex-col space-y-2">
+<a class="font-['Inter'] text-xs uppercase tracking-widest text-[#e5e2e3]/60 hover:text-[#e5c363] transition-colors duration-200" href="#">PRIVACY POLICY</a>
+<a class="font-['Inter'] text-xs uppercase tracking-widest text-[#e5e2e3]/60 hover:text-[#e5c363] transition-colors duration-200" href="#">TERMS OF SERVICE</a>
+<a class="font-['Inter'] text-xs uppercase tracking-widest text-[#e5e2e3]/60 hover:text-[#e5c363] transition-colors duration-200" href="#">LEGAL NOTICE</a>
+<a class="font-['Inter'] text-xs uppercase tracking-widest text-[#e5e2e3]/60 hover:text-[#e5c363] transition-colors duration-200" href="#">COOKIE SETTINGS</a>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-12 mt-16 pt-8 border-t border-[#353436]/30">
+<p class="text-[#e5e2e3]/40 text-[10px] uppercase tracking-[0.2em] font-medium">© 2024 JETOUR AUTOMOTIVE. ENGINEERED FOR EXCELLENCE.</p>
+</div>
+</footer>
+</body></html>
