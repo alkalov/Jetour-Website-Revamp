@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>JETOUR | Contact &amp; Heritage</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "surface-variant": "#e2e2e2",
+                "primary-fixed": "#ffdea5",
+                "on-error": "#ffffff",
+                "on-secondary-fixed-variant": "#005048",
+                "tertiary-container": "#a6a5a5",
+                "surface-dim": "#dadada",
+                "tertiary-fixed": "#e4e2e2",
+                "on-secondary": "#ffffff",
+                "tertiary": "#5e5e5e",
+                "inverse-primary": "#e9c176",
+                "surface": "#f9f9f9",
+                "on-surface": "#1a1c1c",
+                "on-primary-container": "#4e3700",
+                "on-secondary-fixed": "#00201c",
+                "on-primary-fixed-variant": "#5d4201",
+                "on-secondary-container": "#007167",
+                "primary-container": "#c5a059",
+                "secondary-fixed": "#68f9e6",
+                "error": "#ba1a1a",
+                "secondary-fixed-dim": "#44dcca",
+                "surface-container": "#eeeeee",
+                "outline-variant": "#d1c5b4",
+                "surface-container-high": "#e8e8e8",
+                "secondary-container": "#68f9e6",
+                "tertiary-fixed-dim": "#c8c6c6",
+                "surface-bright": "#f9f9f9",
+                "outline": "#7f7667",
+                "on-surface-variant": "#4e4639",
+                "surface-tint": "#775a19",
+                "inverse-on-surface": "#f1f1f1",
+                "on-tertiary-fixed": "#1b1c1c",
+                "surface-container-low": "#f3f3f3",
+                "background": "#f9f9f9",
+                "on-primary": "#ffffff",
+                "on-error-container": "#93000a",
+                "on-primary-fixed": "#261900",
+                "surface-container-lowest": "#ffffff",
+                "on-tertiary": "#ffffff",
+                "surface-container-highest": "#e2e2e2",
+                "inverse-surface": "#2f3131",
+                "on-tertiary-container": "#3b3b3b",
+                "on-background": "#1a1c1c",
+                "primary-fixed-dim": "#e9c176",
+                "secondary": "#006a61",
+                "error-container": "#ffdad6",
+                "primary": "#775a19",
+                "on-tertiary-fixed-variant": "#474747"
+              },
+              fontFamily: {
+                "headline": ["Space Grotesk"],
+                "body": ["Inter"],
+                "label": ["Space Grotesk"]
+              },
+              borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .signature-gradient {
+            background: linear-gradient(135deg, #775a19 0%, #c5a059 100%);
+        }
+        .tonal-transition-surface-container-low {
+            background-color: #f3f3f3;
+        }
+        .ghost-border {
+            border: 1px solid rgba(209, 197, 180, 0.15);
+        }
+        .ghost-border:hover {
+            border-color: #d1c5b4;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-stone-900/80 backdrop-blur-xl flex justify-between items-center px-12 h-20 shadow-sm dark:shadow-none">
+<div class="text-2xl font-bold tracking-tighter text-[#1a1c1c] dark:text-white font-headline">
+<img alt="JETOUR | BUDASTOOR MOTORS" class="h-10 w-auto" src="https://lh3.googleusercontent.com/aida/ADBb0uhJYyvrU7Qoo5fVUcwdQ3rp2rgQF1c5Qb7BEJX9AMNnWml6xuS2Wreax79maaWvZwO2hiwLl7Okl3j_IjDZtXD0zyrUUZSat0CjZTyuYvPeT9DMjIlDEkmFjUvbMuc3b1PBQ0kHzPeax5xsRUp62l8Bwg1_XbsMi65EF1hKjoCa_1FOK_s6Ew8viuLLtnfZSLuZqESJNOVGHJeEI7DyqYB51otRWvSCZCAKNAduRnM6AZEPTzqgyaTUPzXJmZtOVS_Nyv1iRd3t58Y"/>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-['Space_Grotesk'] tracking-tight uppercase text-sm font-medium text-stone-500 hover:text-[#775a19] transition-colors duration-300 pb-1" href="#">Models</a>
+<a class="font-['Space_Grotesk'] tracking-tight uppercase text-sm font-medium text-stone-500 hover:text-[#775a19] transition-colors duration-300 pb-1" href="#">Pre-Owned</a>
+<a class="font-['Space_Grotesk'] tracking-tight uppercase text-sm font-medium text-stone-500 hover:text-[#775a19] transition-colors duration-300 pb-1" href="#">Ownership</a>
+<a class="font-['Space_Grotesk'] tracking-tight uppercase text-sm font-medium text-stone-500 hover:text-[#775a19] transition-colors duration-300 pb-1" href="#">Heritage</a>
+<a class="font-['Space_Grotesk'] tracking-tight uppercase text-sm font-medium text-stone-500 hover:text-[#775a19] transition-colors duration-300 pb-1" href="#">Magazine</a>
+<a class="font-['Space_Grotesk'] tracking-tight uppercase text-sm font-medium text-[#775a19] border-b-2 border-[#775a19] pb-1" href="#">Contact</a>
+</div>
+<button class="signature-gradient text-white px-6 py-2.5 rounded-md font-label uppercase text-xs tracking-widest font-bold scale-95 active:duration-75 transition-all">
+            Book a Test Drive
+        </button>
+</nav>
+<main class="pt-20">
+<!-- Hero Section: Editorial Header -->
+<section class="relative h-[614px] flex items-center px-12 overflow-hidden bg-surface-container-low">
+<div class="z-10 max-w-3xl">
+<span class="label-md uppercase tracking-[0.2em] text-primary font-bold mb-4 block">Connections</span>
+<h1 class="font-headline text-6xl md:text-8xl font-bold tracking-tighter text-on-surface leading-none mb-8">
+                    WHY <br/> <span class="text-outline">JETOUR.</span>
+</h1>
+<p class="text-on-surface-variant text-lg max-w-lg leading-relaxed">
+                    Designed for those who view every journey as an opportunity for discovery. We blend avant-garde technology with the soul of a pioneer.
+                </p>
+</div>
+<div class="absolute right-0 top-0 w-1/2 h-full opacity-20 md:opacity-100">
+<img alt="Jetour Brand Spirit" class="w-full h-full object-cover grayscale brightness-110" src="https://lh3.googleusercontent.com/aida/ADBb0ujVfbLGzgvB2WTVzJlrJVHLzkjiNivG8sCzBYW894ZGZqmliISdrCSJdi5ws3-PyhnWx1D7pvZwX8LOmEheTHN3MMYEI0ystUxfPKsS5tREBXTyF3wJfhq-IJzMBtb-0y2ULTgb3BXW0ZzBCypjxgLkevASH-zIOHqJp9uLAxl1Rsq4oSeWdBhG0Tm2AT9ebu64Fyl5jDNCJzAdQdLa042uiFMy6wMM9Z6yS-2gdJkOpwlX3NgTtdhSnQV-xb1BsNp2JjKkU4zr5sQ"/>
+</div>
+</section>
+<!-- Value Propositions: Asymmetric Bento Grid -->
+<section class="py-24 px-12 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Large Feature -->
+<div class="md:col-span-8 bg-surface-container-lowest p-12 rounded-xl relative overflow-hidden group border border-outline-variant/20">
+<div class="relative z-10">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">explore</span>
+<h3 class="font-headline text-3xl font-bold mb-4">Travel+ Strategy</h3>
+<p class="text-on-surface-variant max-w-md">Our philosophy centers on the ecosystem of travel. We don't just build cars; we create companions for your life's most ambitious expeditions.</p>
+</div>
+<div class="absolute -right-20 -bottom-20 w-80 h-80 bg-surface-container rounded-full group-hover:scale-110 transition-transform duration-700"></div>
+</div>
+<!-- Small Feature -->
+<div class="md:col-span-4 bg-primary text-on-primary p-12 rounded-xl flex flex-col justify-between">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">verified</span>
+<div>
+<h3 class="font-headline text-2xl font-bold mb-2">10 Year Warranty</h3>
+<p class="text-primary-fixed/80 text-sm">Industry-leading protection for peace of mind across every border.</p>
+</div>
+</div>
+<!-- Image Focus Feature: Updated with IMAGE_32 -->
+<div class="md:col-span-7 relative rounded-xl overflow-hidden min-h-[400px]">
+<img alt="Jetour Brand Ambassadors" class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 hover:scale-105" src="https://lh3.googleusercontent.com/aida/ADBb0uhqmIJa2Kef23umcqUq6-BujIRlvrn6Du0J6m_eMixlB4GXEGh2xHTWRY4tAXLxsIr_v3MAm6xJZv2S0SpQxk-86xm38z0Tb2Gy4q3o18R8BwRTgzmu57oSl_7spRidFVsNqg-i4phIWQtQ-_xLNeJ5S1HUDcGhqQmec2tCqnbKb8QB4SvA8BpsxClvFDs8RMD4rNFjAhLRMHm6JmybALpwV427ploQBQX2bCcG4vO80AUgeepwBnWTjXFy8hRakxNs9_sglCRVWg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 to-transparent flex items-end p-12">
+<div>
+<p class="text-xs uppercase tracking-[0.3em] font-bold text-primary-fixed mb-2">Global Vision</p>
+<h3 class="text-white font-headline text-3xl font-medium">Crafted with Precision.</h3>
+</div>
+</div>
+</div>
+<!-- Medium Feature: Updated with IMAGE_29 -->
+<div class="md:col-span-5 bg-surface-container-high rounded-xl overflow-hidden flex flex-col">
+<div class="h-48 overflow-hidden">
+<img alt="Event Atmosphere" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida/ADBb0ugMQpw-VDewZ3z-WFLOXUvCXAfkgX7Cc7WDp6UAO0W165W_-cQB5U3HrlgyMeNXqQH9TSBehmWXxYac6fHSgoG9_PoM27j4DRtwoua4cdsJe1_SEWdYvON86CYNqTjXf6PjLtGLxWqRY7Ljx7QkovxyjSdZcL3ux5cc998kqlH1w6JdUFkVNbmfiJT_kjopCOnhQ2KfpoxwiVS20c5jvazW25ZhoqermcQnCsr6TD0h70NOiBv6Z1MRY1bwkH1techLx7kJR-CzfK0"/>
+</div>
+<div class="p-10">
+<span class="material-symbols-outlined text-secondary text-4xl mb-4">biotech</span>
+<h3 class="font-headline text-2xl font-bold mb-2">Smart Intelligence</h3>
+<p class="text-on-surface-variant text-sm">Integrating L2.5 autonomous driving and voice-activated ecosystems for a seamless human-machine interface.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Heritage & Presence: Updated Photography Gallery -->
+<section class="py-24 px-12 max-w-7xl mx-auto border-t border-outline-variant/30">
+<div class="mb-16">
+<span class="label-md uppercase tracking-[0.2em] text-primary font-bold mb-4 block">Heritage &amp; Presence</span>
+<h2 class="font-headline text-4xl md:text-5xl font-bold tracking-tighter text-on-surface">EXPERIENCE IN KUWAIT.</h2>
+</div>
+<!-- Premium Editorial Gallery -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-stretch">
+<!-- Promotional Banner -->
+<div class="md:col-span-12 rounded-xl overflow-hidden group relative h-[500px]">
+<img alt="Jetour Kuwait Promotion" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/ADBb0uhHZ5hzxggQHMhUWrhZd5dNRsG9xxuKy6fMaLlGe3JmT33dh-Hq5l3xW_9JsSYVCb376ZWMGILHEHwJXCRPWoj45T3ZPjKMGp__M7jGz1VxCoL2qiUSePkVJi62br0VOlh9WMAu_7idO19eygI_jDSxDBTxP8PMWHvSpV6SZbqaitHvX239oujfMtiJYhkURIU0raI9VmYHphiFa8RyTbRkEIk60Njqm0tZqukOXkU5dQAkaFCAoI7omQmKcA68LtfdSwwvC2kWIA"/>
+<div class="absolute inset-0 bg-black/20"></div>
+<div class="absolute bottom-12 left-12 text-white max-w-xl">
+<p class="text-xs uppercase tracking-[0.3em] font-bold mb-4 text-primary-fixed">Seasonal Advantage</p>
+<h3 class="font-headline text-4xl font-bold mb-4">Unrivaled Automotive Value.</h3>
+<p class="text-stone-200 text-lg">Experience the pinnacle of engineering and luxury with our exclusive seasonal offers in the heart of Kuwait.</p>
+</div>
+</div>
+<!-- Event Photography Row: IMAGE_31 and IMAGE_28 -->
+<div class="md:col-span-6 space-y-4">
+<div class="rounded-xl overflow-hidden group aspect-video">
+<img alt="Leadership Address" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/ADBb0ugeV12YUlp8ojPyw46qRY3gq1mRBO9pSjm0mMxBhRLykOVjombsfn2DHIsFRyy6TZJB5hyhfgTXIpxIGN5wp07eDGamsK65Z0iM5JQo8QLZCOBZeKKg3vkT_Jj9Rturq0ZBXWygqTXbQur-9LieKKDkOQEW5WZEOguYjWbqf93Eu5uGk5FZhCVF0Wtd0VzNJUq7x15857kn1erI2w2jt3R-SCdPFHKWM4cVo8byhHlbzkWmUjSMC1L_S-2XLYWff2U8fSvpE3TcQA"/>
+</div>
+<div>
+<p class="text-xs uppercase tracking-widest text-primary font-bold">Unveiling the Future</p>
+<h4 class="font-headline text-xl font-bold mt-1">A Night of Innovation</h4>
+<p class="text-on-surface-variant text-sm mt-2">Witnessing the future of off-road luxury as our leadership shares the Jetour roadmap for the region.</p>
+</div>
+</div>
+<div class="md:col-span-6 space-y-4">
+<div class="rounded-xl overflow-hidden group aspect-video">
+<img alt="Brand Presentation" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/ADBb0ugrDsrcZtz47S4-5rP3mw-h9hKPvQJWun4qe1MVFxXquVeKpevrsuKeNyrlcKFqMZklDsi0WpskSqtH2tWSek6kK_VgU8vHKl-SowvfcLlNsJZUimq2DDKRaaezmcR_mw1gAOlOYVOd2h7bjB05_oD6d5xx0f-MF62JUuYaSoPv8cFY3fOwlSfQ4mXTLKZQ5Rrggl20Bzl7uFTVRHgd42VVjEa4vn1qNBMqmyJGXF2p3FHJ05ACwB4T1uogBFZTHfP0EQBXdwbqqDA"/>
+</div>
+<div>
+<p class="text-xs uppercase tracking-widest text-primary font-bold">Heritage &amp; Excellence</p>
+<h4 class="font-headline text-xl font-bold mt-1">Precision and Passion</h4>
+<p class="text-on-surface-variant text-sm mt-2">Celebrating the synergy between Budastoor Motors and Jetour Global in providing premium automotive solutions.</p>
+</div>
+</div>
+<!-- Bridging Horizons: IMAGE_30 integration -->
+<div class="md:col-span-7 bg-surface-container-lowest p-12 rounded-xl flex flex-col justify-center border border-outline-variant/10">
+<h4 class="font-headline font-bold text-3xl mb-6">Bridging Horizons</h4>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8">Our partnership with Budastoor Motors brings world-class automotive excellence to the region, ensuring a journey of premium comfort and reliability. From the heart of the city to the dunes beyond, Jetour is your premier companion.</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-[1px] bg-primary"></div>
+<span class="text-xs uppercase tracking-widest font-bold">Excellence in Motion</span>
+</div>
+</div>
+<div class="md:col-span-5 rounded-xl overflow-hidden group border border-outline-variant/10">
+<img alt="Strategic Address" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 aspect-square" src="https://lh3.googleusercontent.com/aida/ADBb0ui1eZZMeCq53neJKLYY23jujkI5YVI6E50KUZa54WQWChOnebWaXpFSwSUwJxu6rX7X5vQ4i2tqaj-QqMFm4E1pKWgmU42fJlAiFG-zO5uVnVEUTdTV7_t0C7hvPRkfnZXGBqqDhAq_o6QE3dmPSq2J2iqOQEFVldhsTb6upeXAax_eolZ_u_6I2gjJNM-NnxxjVwdpmnjOZIcIVtbVhQAxjTz1Div-zV29ny34zvor9fpGfrh9CTnAwEgDKAeHdwNeRshqqclzrGc"/>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-24 bg-surface-container">
+<div class="max-w-7xl mx-auto px-12 grid grid-cols-1 md:grid-cols-2 gap-24">
+<!-- Contact Info -->
+<div class="flex flex-col justify-center">
+<h2 class="font-headline text-4xl font-bold mb-8 tracking-tight">START YOUR <br/><span class="text-primary">EXPEDITION.</span></h2>
+<div class="space-y-12">
+<div class="flex items-start gap-6">
+<span class="material-symbols-outlined text-primary mt-1">location_on</span>
+<div>
+<h4 class="font-headline font-bold text-sm uppercase tracking-widest mb-2">Headquarters</h4>
+<p class="text-on-surface-variant text-sm">Building 12, Innovation District<br/>Shanghai, PRC 201203</p>
+</div>
+</div>
+<div class="flex items-start gap-6">
+<span class="material-symbols-outlined text-primary mt-1">support_agent</span>
+<div>
+<h4 class="font-headline font-bold text-sm uppercase tracking-widest mb-2">Global Concierge</h4>
+<p class="text-on-surface-variant text-sm">concierge@jetourglobal.com<br/>+86 400 888 1997</p>
+</div>
+</div>
+<!-- Strategic Visual Representation -->
+<div class="rounded-xl overflow-hidden h-48 bg-stone-200 relative group">
+<img alt="Brand Presence" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500" src="https://lh3.googleusercontent.com/aida/ADBb0uhGIPypBRBrGd9PMWgnuRe0FauUxLz1D5sOL0ZN61ngLukdjHaIlgLJCdqH2TvEYxO2y0z7qiS01aBGRIo8_WOx6o52imZr8bQn9n6nWncYQE-ilUTxvEIZRAR5lYDngbsXGzllG6m46aA_sKfRPDh2R9UlH0_vZEniMl6TTMMKn34wPC7-PEXi2khe6-z9HfagjE9HHcRKmLo_ABSfxIoTb1BsXcXGvCxoaP4vcF6d5M8ple4T8Cuc6L6Du0kaD20Qv0mgE2edINw"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="bg-primary text-white p-3 rounded-full shadow-xl">
+<span class="material-symbols-outlined">pin_drop</span>
+</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Form -->
+<div class="bg-surface-container-lowest p-12 rounded-xl shadow-[0_20px_50px_rgba(78,70,57,0.05)] border border-outline-variant/10">
+<form class="space-y-8">
+<div class="relative">
+<label class="block font-label text-[10px] uppercase tracking-[0.15em] text-outline mb-2">Full Name</label>
+<input class="w-full bg-transparent border-b border-outline-variant focus:border-primary focus:ring-0 transition-colors py-2 text-on-surface placeholder-surface-variant" placeholder="E.g. Julianne V. Sterling" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div class="relative">
+<label class="block font-label text-[10px] uppercase tracking-[0.15em] text-outline mb-2">Email Address</label>
+<input class="w-full bg-transparent border-b border-outline-variant focus:border-primary focus:ring-0 transition-colors py-2 text-on-surface" placeholder="name@domain.com" type="email"/>
+</div>
+<div class="relative">
+<label class="block font-label text-[10px] uppercase tracking-[0.15em] text-outline mb-2">Model of Interest</label>
+<select class="w-full bg-transparent border-b border-outline-variant focus:border-primary focus:ring-0 transition-colors py-2 text-on-surface appearance-none">
+<option>Jetour Dashing</option>
+<option>Jetour X70 Plus</option>
+<option>Jetour T2</option>
+</select>
+</div>
+</div>
+<div class="relative">
+<label class="block font-label text-[10px] uppercase tracking-[0.15em] text-outline mb-2">Your Message</label>
+<textarea class="w-full bg-transparent border-b border-outline-variant focus:border-primary focus:ring-0 transition-colors py-2 text-on-surface resize-none" placeholder="How can we assist your journey?" rows="4"></textarea>
+</div>
+<div class="flex items-center gap-4 py-4">
+<input class="rounded-sm border-outline-variant text-primary focus:ring-primary/20" type="checkbox"/>
+<span class="text-xs text-on-surface-variant">I agree to the <a class="underline" href="#">Privacy Policy</a> and receiving updates.</span>
+</div>
+<button class="w-full signature-gradient text-white py-4 rounded-md font-headline font-bold uppercase tracking-widest text-sm hover:shadow-lg transition-shadow" type="submit">
+                            Submit Inquiry
+                        </button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 px-12 border-t border-stone-100 dark:border-stone-800 bg-[#f9f9f9] dark:bg-stone-950">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8 max-w-7xl mx-auto">
+<div class="text-lg font-black tracking-widest text-stone-900 dark:text-stone-100 font-headline uppercase">JETOUR</div>
+<div class="flex gap-8">
+<a class="font-['Inter'] text-xs tracking-widest uppercase text-stone-500 hover:text-stone-900 dark:hover:text-stone-100 transition-all duration-200 ease-in-out" href="#">Privacy Policy</a>
+<a class="font-['Inter'] text-xs tracking-widest uppercase text-stone-500 hover:text-stone-900 dark:hover:text-stone-100 transition-all duration-200 ease-in-out" href="#">Terms of Service</a>
+<a class="font-['Inter'] text-xs tracking-widest uppercase text-[#775a19] font-semibold transition-all duration-200 ease-in-out" href="#">Contact</a>
+</div>
+<div class="font-['Inter'] text-xs tracking-widest uppercase text-stone-500">© 2024 JETOUR AUTOMOTIVE. ALL RIGHTS RESERVED.</div>
+</div>
+</footer>
+</body></html>
